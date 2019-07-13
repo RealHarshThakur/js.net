@@ -1,10 +1,12 @@
 # JS.net
-This repo contains code of JScript .NET, which ships in all Windows machines by default with a built-in compiler.
+This repo contains code of JScript .NET to execute potentially malicious code, which ships in all Windows machines by default with a built-in compiler
 
 ## What is JScript .NET?
     You can access the whole of .NET with scripting capabilities.
     Here's the link: https://msdn.microsoft.com/en-us/ie/aa289164(v=vs.100)
- 
+   
+## How to compile?
+    C:\Windows\Microsoft.NET\Framework64\v4.0.30319\jsc.exe <name of the js file>
 ## What I found:
 - All the machines with .NET installed have jsc.exe in them
 - Jscript is directly compiled to .NET assembly.
@@ -12,7 +14,7 @@ This repo contains code of JScript .NET, which ships in all Windows machines by 
 - You can access Win32 API as well.
 - I wrote a script (jscript-dotnet.js) which has another jscript-dotnet script within it, which is compiled in the %TEMP% directory and executed from there.
 - Procmon dump showed no trace of Windows Scripting Host. It utilise Windows Scripting Runtime(scrrun.dll and jscript.dll).
-
+- Can be used as an alternative to csc.exe. Although the code I wrote doesn't demonstrate that, but it can be used along with InstallUtil.exe depending on the environment being targetted.
 
 ## Advantage
 -  Adds another tool in the attacker's arsenal.
