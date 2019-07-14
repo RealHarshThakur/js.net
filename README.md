@@ -31,4 +31,3 @@ This repo contains code of JScript .NET to execute potentially malicious code, w
 ## TODO
 - Port some of the popular C# tools.
 - Look into possibility of converting this into a wscript edible js. As that can be used in html applications and oter Windows Scripting Components
-- Also noticed vbc.exe. Do similar work on it
