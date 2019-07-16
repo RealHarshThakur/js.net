@@ -14,7 +14,7 @@ This repo contains code of JScript .NET to execute potentially malicious code, w
 - You can access Win32 API as well so there's room for unmanaged code.
 - I wrote a script (jscript-dotnet.js) which has another jscript-dotnet script within it, which is compiled in the %TEMP% directory and executed from there.
 - Procmon dump showed no trace of Windows Scripting Host. It utilise Windows Scripting Runtime(scrrun.dll and jscript.dll). This would only occur if you use native jscript functionality like creating ActiveXObjects. 
-- Can be used as an alternative to csc.exe. Although the code I wrote doesn't demonstrate that, but it can be used along with InstallUtil.exe as an application whitelist bypass depending on the environment being targetted.
+- Can be used as an alternative to csc.exe. Although the code I wrote doesn't demonstrate that, but it can be used along with other whitelist bypasses as an application whitelist bypass depending on the environment being targetted. 
 
 ## Advantage
 -  Adds another tool in the attacker's arsenal.
