@@ -27,7 +27,8 @@ This repo contains code of JScript .NET to execute potentially malicious code, w
 ## Drawbacks
 - Disk activity: Dropping temporary files to disk.
 - Command line activity: To compile the files.
+    Note: I am considering this as drawbacks if the payload is sent in form of JS .
 
 ## TODO
-- Add functionality load .NET assemblies so that popular C# tools can be loaded directly.
+- Add functionality to load .NET assemblies so that popular C# tools can be loaded directly.
 - Look into possibility of converting this into a wscript edible js. As that can be used in html applications and oter Windows Scripting Components
