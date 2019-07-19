@@ -31,4 +31,5 @@ This repo contains code of JScript .NET to execute potentially malicious code, w
 
 ## TODO
 - Add functionality to load .NET assemblies so that popular C# tools can be loaded directly.
-- Look into possibility of converting this into a wscript edible js. As that can be used in html applications and oter Windows Scripting Components
+- Look into possibility of converting this into a wscript edible js. As that can be used in html applications and other Windows Scripting Components
+- Look into making it edible by msbuild.exe as msbuild can take C# code. 
